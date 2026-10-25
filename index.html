@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daisy Mae C. Mendoza | BSIT Student</title>
+  <meta name="description" content="Portfolio of Daisy Mae C. Mendoza, BSIT student at Saint Peter's College of Toril." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">&lt;DaisyMae<span>/&gt;</span></a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#" class="btn btn-outline" id="openContact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">BSIT · 1st Year</p>
+          <h1>Hi, I’m Daisy Mae C. Mendoza</h1>
+          <p class="role">Aspiring <strong>Developer</strong></p>
+          <p class="tagline">Learning, building, and improving one project at a time.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">View my work →</a>
+            <a href="#contact" class="link-plain">Say hello</a>
+          </div>
+        </div>
+
+        <div class="photo-frame reveal">
+          <!-- The picture comes from script.js (CONFIG.photos.hero) -->
+          <img class="profile-img" data-photo="hero" alt="Photo of Daisy Mae C. Mendoza" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <!-- The picture comes from script.js (CONFIG.photos.about) -->
+          <img class="avatar profile-img" data-photo="about" alt="Daisy Mae C. Mendoza" />
+        </div>
+
+        <div class="reveal">
+          <h2>About Me</h2>
+          <p>Hi! I’m <strong>Daisy Mae C. Mendoza</strong>, an Information Technology student passionate about programming, technology, and creating useful digital solutions. I’m learning, building, and improving one project at a time.</p>
+          <p>I am a BSIT student who enjoys learning about programming, computer systems, and web development. I want to turn what I learn in class into projects that solve real problems.</p>
+          <p>My goal is to improve my technical skills, become a better problem-solver, and grow into a developer who creates meaningful solutions.</p>
+
+          <ul class="facts">
+            <li><span>Course</span>Bachelor of Science in Information Technology</li>
+            <li><span>Year</span>1st Year</li>
+            <li><span>School</span>Saint Peter’s College of Toril</li>
+          </ul>
+
+          <div class="mini-cards">
+            <div class="mini-card"><h4>Programming</h4><p>Learning the basics and practicing every day.</p></div>
+            <div class="mini-card"><h4>Web Development</h4><p>Building pages with HTML, CSS and JavaScript.</p></div>
+            <div class="mini-card"><h4>Problem Solving</h4><p>Turning class lessons into real solutions.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHAT I DO ================= -->
+    <section class="whatido" id="whatido">
+      <div class="container">
+        <h2 class="section-title reveal">What I Do</h2>
+        <p class="section-sub reveal">I’m an aspiring developer passionate about creating clean, responsive, and meaningful websites. I enjoy turning ideas into functional, interactive experiences using HTML, CSS and JavaScript.</p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <svg class="icon" viewBox="0 0 48 48"><rect x="7" y="8" width="34" height="24" rx="3"/><path d="M20 16l-5 4 5 4M28 16l5 4-5 4M3 38h42"/></svg>
+            <h3>Clean &amp; Semantic Code</h3>
+            <p>Writing well-structured, semantic HTML and tidy code that is easy to read and maintain.</p>
+          </article>
+
+          <article class="card reveal">
+            <svg class="icon fill" viewBox="0 0 48 48"><rect x="8" y="14" width="22" height="28" rx="4" transform="rotate(-18 19 28)" fill="none"/><rect x="18" y="8" width="22" height="28" rx="4" transform="rotate(14 29 22)"/></svg>
+            <h3>Modern UI Styling</h3>
+            <p>Designing good-looking, responsive interfaces using CSS and simple design principles.</p>
+          </article>
+
+          <article class="card reveal">
+            <svg class="icon fill" viewBox="0 0 48 48"><path d="M24 4l6 6-6 6-6-6zM24 32l6 6-6 6-6-6z"/><path d="M10 18l6 6-6 6-6-6zM38 18l6 6-6 6-6-6z"/></svg>
+            <h3>Interactive Components</h3>
+            <p>Building dynamic, user-friendly features with JavaScript, one small component at a time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">My Tech Stack</h2>
+        <p class="section-sub reveal">The languages and tools I’m using and learning as I build my first projects.</p>
+
+        <div class="marquee reveal">
+          <div class="marquee-track" id="track">
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" /></span>HTML</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" /></span>CSS</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" /></span>JavaScript</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg" alt="" /></span>C++</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" /></span>Database</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" /></span>Git</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" /></span>GitHub</div>
+            <div class="tech"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" /></span>VS Code</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My Projects</h2>
+        <p class="section-sub reveal">Here are the projects I’m working on and planning as I practice programming and explore new technologies.</p>
+        <div class="cards cards-3" id="projectGrid"><!-- built from PROJECTS in script.js --></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2>Let’s Connect</h2>
+          <p>Have a question, an idea, or want to collaborate on something? Send me a message and I’ll get back to you.</p>
+          <ul class="contact-list">
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:daisymaemendoza412@gmail.com">daisymaemendoza412@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Toril, Davao City, Philippines</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.5"/></svg><span>Saint Peter’s College of Toril</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <label>Your name
+            <input type="text" name="name" placeholder="Juan Dela Cruz" required />
+          </label>
+          <label>Your email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" placeholder="Write your message here…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= CONTACT DRAWER ================= -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Contact" aria-hidden="true">
+    <button class="drawer-close" id="closeContact" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <h3>Get in Touch</h3>
+    <ul class="contact-list">
+      <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:daisymaemendoza412@gmail.com">daisymaemendoza412@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Toril, Davao City, Philippines</span></li>
+    </ul>
+    <h4>Social Media</h4>
+    <div class="socials" data-socials></div>
+  </aside>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Daisy Mae C. Mendoza</div>
+        <p>BSIT student at Saint Peter’s College of Toril, building useful digital solutions one project at a time.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="socials" data-socials></div>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Daisy Mae C. Mendoza. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
